@@ -54,13 +54,12 @@ const storage = multer.diskStorage({
 
 
 
-
-
+import path from 'path';
 
 
 
 app.use('/uploads', express.static('uploads'));
-app.use('/photos',express.static('photos'));
+app.use('/photos',express.static(path.join(__dirname,'photos')));
 app.get("/api/images",(req,res)=>{
     res.json({
         "homeImages": [`https://institute-site.vercel.app/photos/group.jpg`,`https://institute-site.vercel.app/photos/gv.jpg`,`https://institute-site.vercel.app/photos/logo.jpg`,`https://institute-site.vercel.app/photos/visit.jpg`,`https://institute-site.vercel.app/photos/wvd.png`],
