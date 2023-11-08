@@ -7,7 +7,7 @@ function OurTeam(){
     useEffect(()=>{
         const fetchPeoples = async () => {
             try {
-              const response = await fetch('http://192.168.1.117:3000/api/peoples');
+              const response = await fetch('https://institute-site.vercel.app/api/peoples');
               if (!response.ok) {
                 throw new Error('Failed to fetch notices');
               }

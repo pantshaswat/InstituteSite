@@ -8,7 +8,7 @@ export default function NoticePreview() {
   useEffect(() => {
     const fetchNotices = async () => {
       try {
-        const response = await fetch('http://192.168.1.117:3000/api/notices');
+        const response = await fetch('https://institute-site.vercel.app/api/notices');
         if (!response.ok) {
           throw new Error('Failed to fetch notices');
         }
@@ -38,7 +38,7 @@ export default function NoticePreview() {
             <article key={notice.notice_id} className="flex max-w-xl flex-col items-start justify-between">
               <div className="relative">
                 <div className=" relative overflow-hidden " style={{height: '400px', width:"350px"}} >
-                <img src= {`http://192.168.1.117:3000/uploads/${notice.notice_picture}`} alt="" className='img-container rounded-[15px]'  />
+                <img src= {`https://institute-site.vercel.app/uploads/${notice.notice_picture}`} alt="" className='img-container rounded-[15px]'  />
                 </div>
                 
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-transparent to-white text-center p-3 ">

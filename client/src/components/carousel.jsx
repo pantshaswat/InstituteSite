@@ -10,7 +10,7 @@ function Carousel(){
     const[carouselbackendImage, setCarouselBackendImage] = useState([]);
     
     useEffect(()=>{
-        fetch(`http://192.168.1.117:3000/api/images`)
+        fetch(`https://institute-site.vercel.app/api/images`)
         .then((res)=> res.json())
         .then((data)=> setCarouselBackendImage(data.homeImages))
         

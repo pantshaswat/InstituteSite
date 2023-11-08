@@ -7,7 +7,7 @@ function NoticePage(){
     useEffect(() => {
       const fetchNotices = async () => {
         try {
-          const response = await fetch('http://192.168.1.117:3000/api/notices');
+          const response = await fetch('https://institute-site.vercel.app/api/notices');
           if (!response.ok) {
             throw new Error('Failed to fetch notices');
           }
@@ -28,7 +28,7 @@ function NoticePage(){
                  <div  className="flex notice-margin">
    <div className="max-w-sm side-margin overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ width:"350px"}}>
     <a href="#">
-        <img className="rounded-t-lg img-container rounded-[15px] "style={{height: '400px', width:"350px"}} src={`http://192.168.1.117:3000/uploads/${notice.notice_picture}`} alt="" />
+        <img className="rounded-t-lg img-container rounded-[15px] "style={{height: '400px', width:"350px"}} src={`https://institute-site.vercel.app/uploads/${notice.notice_picture}`} alt="" />
     </a>
     <div className="p-5">
         <a href="#">
