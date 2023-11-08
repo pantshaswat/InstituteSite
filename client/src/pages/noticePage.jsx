@@ -25,7 +25,7 @@ function NoticePage(){
         <>
         {notices.map((notice, index)=>(
             <div key={notice.notice_id}>
-                 <div  className="flex notice-margin">
+                 <div  className="  grid border-t border-gray-200   lg:grid-cols-3 flex ">
    <div className="max-w-sm side-margin overflow-hidden bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" style={{ width:"350px"}}>
     <a href="#">
         <img className="rounded-t-lg img-container rounded-[15px] "style={{height: '400px', width:"350px"}} src={`https://institute-site.vercel.app/uploads/${notice.notice_picture}`} alt="" />
@@ -47,10 +47,8 @@ function NoticePage(){
        
     </div>
 </div>
-<div>
-  
-</div>
-<p className='w-80  h-60 side-margin '>
+
+<p className=' side-margin '>
     {notice.notice_description}
 </p>
 

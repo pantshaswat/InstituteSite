@@ -12,7 +12,7 @@ function NavBar({ selectedPage, setSelectedPage }) {
     <>
       <nav className="bg-white border-gray-200 dark:bg-gray-900 nav-bar nav-bar-top">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 custom-navbar-height">
-          <Link to="http://localhost:5173" className="flex items-center">
+          <Link to="https://institute-site.vercel.app/" className="flex items-center">
             <img src="/photos/logo.jpg" className=" logo-height mr-5 custom-rounded-box" />
             <span className=" font-link hide-full-text text-color ">Institute of <br className="hidden-ss"></br>Community Services</span>
             <span className="font-link show-ics">I C S</span>
