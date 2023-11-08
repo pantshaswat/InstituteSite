@@ -1,0 +1,94 @@
+.text-color{
+  color: rgb(17, 24, 39);
+  
+}
+.notice-margin{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.side-margin{
+  margin-left: 10px;
+}
+.nav-bar-top {
+  position: relative;
+  z-index: 2; /* Ensure the navbar is on top of other elements */
+}
+.selected-text-size{
+  font-size: 1.2rem;
+}
+.unselected-text-size{
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .hidden-ss {
+    display: none !important;
+  }
+}
+
+.font-link {
+  font-family: 'Fjalla One', cursive;
+  font-weight: bold;
+  font-size: 1.8rem;
+  
+}
+@media (min-width:415.1px){
+  .show-ics{
+    display: none;
+  }
+}
+@media (max-width: 415px) {
+  .font-link {
+    font-size: 1.8rem; /* Set the font size for small screens */
+  }
+
+  .show-ics {
+    display: inline !important; /* Show the abbreviation "ICS" */
+  }
+
+  .hide-full-text {
+    display: none !important; /* Hide the full text "Institute of Community Services" */
+  }
+}
+
+.back-color{
+  background: linear-gradient(180deg, #071384 0%, #B1B352 0.01%, #2D8B16 99.99%, rgba(217, 217, 217, 0.00) 100%) ;
+}
+.back-color :hover{
+  background: rgb(17, 24, 39);
+}
+.carousel-height{
+  height: 40rem;
+}
+
+.nav-bar{
+  border: 3px  solid;
+opacity: 0.9;
+background: linear-gradient(180deg, #071384 0%, #B1B352 0.01%, #2D8B16 99.99%, rgba(217, 217, 217, 0.00) 100%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.custom-navbar-height{
+  height: 6.5rem;
+}
+.logo-height{
+  height: 4rem;
+
+}
+.custom-rounded-box{
+  border-radius: 50%;
+}
+
+.img-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the entire container */
+}
+.carousel-item {
+  transition: transform 0.3s ease-in-out, opacity 0.3 ease-in-out; /* Adjust the duration and easing as needed */
+}
