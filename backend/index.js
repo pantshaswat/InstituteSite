@@ -63,7 +63,7 @@ app.use('/uploads', express.static('uploads'));
 app.use('/photos',express.static('photos'));
 app.get("/api/images",(req,res)=>{
     res.json({
-        "homeImages": [`http://${hostName}:${port}/photos/group.jpg`,`http://${hostName}:${port}/photos/gv.jpg`,`http://${hostName}:${port}/photos/logo.jpg`,`http://${hostName}:${port}/photos/visit.jpg`,`http://${hostName}:${port}/photos/wvd.png`],
+        "homeImages": [`http://institute-site.vercel.app/photos/group.jpg`,`http://institute-site.vercel.app/photos/gv.jpg`,`http://institute-site.vercel.app/photos/logo.jpg`,`http://institute-site.vercel.app/photos/visit.jpg`,`http://institute-site.vercel.app/photos/wvd.png`],
         
     })
 }
