@@ -24,7 +24,7 @@ function AddNoticePage(){
         }
         formData.append('text_data', JSON.stringify(textData));
         try {
-            const response = await axios.post('http://192.168.1.117:3000/upload', formData, {
+            const response = await axios.post('https://institute-site.vercel.app/upload', formData, {
               headers: { 'Content-Type': 'multipart/form-data' },
             });
             console.log(response.data);
